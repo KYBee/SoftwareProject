@@ -5,10 +5,18 @@
  * the basic operations that the A* pathfinding algorithm needs to perform its
  * processing.
  **/
+import java.util.*;
+
 public class AStarState
 {
     /** This is a reference to the map that the A* algorithm is navigating. **/
     private Map2D map;
+
+    /** This is a map that stores Waypoints which should be traverse*/
+    private Map<Location, Waypoint> openWayPoints;
+
+    /** This is a map that stores Waypoints which already been measured*/
+    private Map<Location, Waypoint> closedWayPoints;
 
 
     /**
@@ -20,6 +28,8 @@ public class AStarState
             throw new NullPointerException("map cannot be null");
 
         this.map = map;
+        this.openWayPoints = new HashMap<>();
+        this.closedWayPoints = new HashMap<>();
     }
 
     /** Returns the map that the A* pathfinder is navigating. **/
