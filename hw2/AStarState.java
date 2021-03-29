@@ -13,10 +13,10 @@ public class AStarState
     private Map2D map;
 
     /** This is a map that stores Waypoints which should be traverse*/
-    private Map<Location, Waypoint> openWayPoints;
+    private Map<Location, Waypoint> openWaypoints;
 
     /** This is a map that stores Waypoints which already been measured*/
-    private Map<Location, Waypoint> closedWayPoints;
+    private Map<Location, Waypoint> closedWaypoints;
 
 
     /**
@@ -28,8 +28,8 @@ public class AStarState
             throw new NullPointerException("map cannot be null");
 
         this.map = map;
-        this.openWayPoints = new HashMap<>();
-        this.closedWayPoints = new HashMap<>();
+        this.openWaypoints = new HashMap<>();
+        this.closedWaypoints = new HashMap<>();
     }
 
     /** Returns the map that the A* pathfinder is navigating. **/
@@ -43,10 +43,22 @@ public class AStarState
      * with the minimum total cost.  If there are no open waypoints, this method
      * returns <code>null</code>.
      **/
+
     public Waypoint getMinOpenWaypoint()
     {
         // TODO:  Implement.
-        return null;
+        if (openWaypoints.isEmpty())
+            return null;
+        else {
+            Waypoint minWaypoint = null;
+
+            for (Waypoint w : openWaypoints.values()) {
+                if (minWaypoint == null || w.getTotalCost() < minWaypoint.getTotalCost())
+                    minWaypoint = w;
+            }
+
+            return minWaypoint;
+        }
     }
 
     /**
@@ -58,9 +70,19 @@ public class AStarState
      * IF the new waypoint's "previous cost" value is less than the current
      * waypoint's "previous cost" value.
      **/
+
     public boolean addOpenWaypoint(Waypoint newWP)
     {
         // TODO:  Implement.
+        Location target = newWP.getLocation();
+
+        if (openWaypoints.containsKey(target)) {
+            if (Float.compare(newWP.getPreviousCost(), openWaypoints.get(target).getPreviousCost()) < 0)
+                openWaypoints.put(target, newWP);
+        }
+        else
+            openWaypoints.put(target, newWP);
+
         return false;
     }
 
@@ -68,8 +90,7 @@ public class AStarState
     /** Returns the current number of open waypoints. **/
     public int numOpenWaypoints()
     {
-        // TODO:  Implement.
-        return 0;
+        return openWaypoints.size();
     }
 
 
@@ -79,7 +100,7 @@ public class AStarState
      **/
     public void closeWaypoint(Location loc)
     {
-        // TODO:  Implement.
+        closedWaypoints.put(loc, openWaypoints.remove(loc));
     }
 
     /**
@@ -88,7 +109,6 @@ public class AStarState
      **/
     public boolean isLocationClosed(Location loc)
     {
-        // TODO:  Implement.
-        return false;
+        return closedWaypoints.containsKey(loc);
     }
 }
