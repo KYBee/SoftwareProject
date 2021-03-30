@@ -28,6 +28,7 @@ public class AStarState
             throw new NullPointerException("map cannot be null");
 
         this.map = map;
+        // initialize openWaypoints, closedWaypoints by assigning new Hashmap
         this.openWaypoints = new HashMap<>();
         this.closedWaypoints = new HashMap<>();
     }
@@ -46,17 +47,16 @@ public class AStarState
 
     public Waypoint getMinOpenWaypoint()
     {
-        // TODO:  Implement.
+        // first check whether the openWaypoint is empty or not. if empty, return null.
         if (openWaypoints.isEmpty())
             return null;
+        // if not empty, compare each Waypoint's total cost(float).
         else {
             Waypoint minWaypoint = null;
-
             for (Waypoint w : openWaypoints.values()) {
-                if (minWaypoint == null || w.getTotalCost() < minWaypoint.getTotalCost())
+                if (minWaypoint == null || Float.compare(w.getTotalCost(), minWaypoint.getTotalCost()) < 0)
                     minWaypoint = w;
             }
-
             return minWaypoint;
         }
     }
@@ -73,12 +73,14 @@ public class AStarState
 
     public boolean addOpenWaypoint(Waypoint newWP)
     {
-        // TODO:  Implement.
         Location target = newWP.getLocation();
 
         if (openWaypoints.containsKey(target)) {
-            if (Float.compare(newWP.getPreviousCost(), openWaypoints.get(target).getPreviousCost()) < 0)
+            // add new key, value set <Location, Waypoint> only when new Waypoint has lower value of previous cost(float)
+            if (Float.compare(newWP.getPreviousCost(), openWaypoints.get(target).getPreviousCost()) < 0) {
                 openWaypoints.put(target, newWP);
+                return true;
+            }
         }
         else
             openWaypoints.put(target, newWP);
