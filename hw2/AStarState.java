@@ -78,12 +78,16 @@ public class AStarState
         if (openWaypoints.containsKey(target)) {
             // add new key, value set <Location, Waypoint> only when new Waypoint has lower value of previous cost(float)
             if (Float.compare(newWP.getPreviousCost(), openWaypoints.get(target).getPreviousCost()) < 0) {
+                // new Waypoints added
                 openWaypoints.put(target, newWP);
                 return true;
             }
         }
-        else
+        else{
+            // new Waypoints added
             openWaypoints.put(target, newWP);
+            return true;
+        }
 
         return false;
     }
