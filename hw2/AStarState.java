@@ -45,6 +45,9 @@ public class AStarState
      * returns <code>null</code>.
      **/
 
+    /** 210401자 교수님의 줌 세션을 듣고 수업시간에 배운 Comparator를 사용해서 getMinOpenWaypoint를 해결해보기 위해서
+     * 제가 구현한 방법과는 다른 방법으로 코드를 한 번 더 짜보았습니다. 기존의 코드는 아래에 주석처리 했습니다.
+     *
     public Waypoint getMinOpenWaypoint()
     {
         // first check whether the openWaypoint is empty or not. if empty, return null.
@@ -59,6 +62,26 @@ public class AStarState
             }
             return minWaypoint;
         }
+    }
+     */
+
+    /**아래는 새로 구현한 코드입니다.*/
+
+    /** 전달받은 HashMap과 Comparator으로 최소값을 return 합니다. */
+    static Waypoint min(Map<Location, Waypoint> coll, Comparator<Waypoint> comp) {
+        List<Waypoint> sortedWaypoint = new LinkedList<>(coll.values());
+        Collections.sort(sortedWaypoint, comp);
+        return sortedWaypoint.get(0);
+    }
+
+    public Waypoint getMinOpenWaypoint() {
+        if (openWaypoints.isEmpty()) return null;
+
+        return min(openWaypoints, new Comparator<Waypoint>() {
+            public int compare(Waypoint w1, Waypoint w2) {
+                return Double.compare(w1.getTotalCost(), w2.getTotalCost());
+            }
+        });
     }
 
     /**
