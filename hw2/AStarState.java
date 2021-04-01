@@ -79,7 +79,7 @@ public class AStarState
 
         return min(openWaypoints, new Comparator<Waypoint>() {
             public int compare(Waypoint w1, Waypoint w2) {
-                return Double.compare(w1.getTotalCost(), w2.getTotalCost());
+                return Float.compare(w1.getTotalCost(), w2.getTotalCost());
             }
         });
     }
