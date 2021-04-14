@@ -37,7 +37,10 @@ public class FractalExplorer {
         JButton resetButton = new JButton("Reset Display");
         /** Add listeners to components. **/
 
+        //implementing ActionListener by using inner class ActionHandler
         //resetButton.addActionListener(new ActionHandler());
+
+        //implementing anonymous class ActionListener
         resetButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 fGen.getInitialRange(range);
@@ -45,15 +48,16 @@ public class FractalExplorer {
             }
         });
 
+        //add mouseListener with inner class MouseHandler
         img.addMouseListener(new MouseHandler());
 
         /** Put all of the components into the Frame. **/
         JPanel bPanel = new JPanel();
         bPanel.add(resetButton);
 
-        frame.setLayout(new java.awt.BorderLayout());
-        frame.add(img, java.awt.BorderLayout.CENTER);
-        frame.add(bPanel, java.awt.BorderLayout.SOUTH);
+        frame.setLayout(new BorderLayout());
+        frame.add(img, BorderLayout.CENTER);
+        frame.add(bPanel, BorderLayout.SOUTH);
         frame.setDefaultCloseOperation(javax.swing.JFrame.EXIT_ON_CLOSE);
 
         /** Display the frame and components within **/
@@ -89,7 +93,6 @@ public class FractalExplorer {
     
     /** Simple handler to reset the zoom level. **/
     private class ActionHandler implements ActionListener {
-        // TODO
         public void actionPerformed(ActionEvent e) {
             fGen.getInitialRange(range);
             drawFractal();
