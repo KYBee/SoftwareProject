@@ -1,6 +1,3 @@
-package fractals;
-import fractals.generator.*;
-
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.image.BufferedImage;
