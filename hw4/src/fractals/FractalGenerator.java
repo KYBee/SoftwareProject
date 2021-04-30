@@ -1,3 +1,8 @@
+package fractals;
+
+import fractals.generator.*;
+
+
 import java.awt.geom.Rectangle2D;
 
 /**
