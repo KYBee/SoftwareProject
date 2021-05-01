@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="fractals">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../fractals/out/artifacts/fractals_jar/fractals.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
