@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="fractals:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/fractals_jar</output-path>
+    <root id="archive" name="fractals.jar">
+      <element id="module-output" name="fractals" />
+    </root>
+  </artifact>
+</component>
