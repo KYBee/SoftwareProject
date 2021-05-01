@@ -1,7 +1,5 @@
 package fractals;
-
 import fractals.generator.*;
-
 
 import java.awt.*;
 import java.awt.event.*;
