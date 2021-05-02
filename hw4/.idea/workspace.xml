@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4fe5a48e-acaa-4f68-8b42-b1ca26432880" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/fractals_02.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fractals/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fractals/src/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fractals/src/fractals/FractalExplorer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../fractals/src/fractals/FractalExplorer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fractals/src/fractals/FractalGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../fractals/src/fractals/FractalGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fractals/src/fractals/JImageDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/../fractals/src/fractals/JImageDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fractals/src/fractals/generator/BurningShip.java" beforeDir="false" afterPath="$PROJECT_DIR$/../fractals/src/fractals/generator/BurningShip.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fractals/src/fractals/generator/Mandelbrot.java" beforeDir="false" afterPath="$PROJECT_DIR$/../fractals/src/fractals/generator/Mandelbrot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fractals/src/fractals/generator/Tricorn.java" beforeDir="false" afterPath="$PROJECT_DIR$/../fractals/src/fractals/generator/Tricorn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/fractals.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HW4 패키징과 배포.pdf" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/fractals.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hw4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/hw4.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FractalsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FractalsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,8 +27,8 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../fractals_02.jar" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../fractals/out/artifacts/fractals_jar/fractals.jar" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
@@ -49,13 +40,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -75,6 +68,7 @@
       <option name="presentableId" value="Default" />
       <updated>1619854559668</updated>
       <workItem from="1619854560874" duration="130000" />
+      <workItem from="1619935594398" duration="368000" />
     </task>
     <servers />
   </component>
@@ -91,5 +85,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
