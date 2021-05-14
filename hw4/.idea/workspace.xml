@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4fe5a48e-acaa-4f68-8b42-b1ca26432880" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/fractals.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hw4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/hw4.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FractalsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FractalsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,19 +37,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.FractalsTest" />
@@ -69,6 +53,7 @@
       <updated>1619854559668</updated>
       <workItem from="1619854560874" duration="130000" />
       <workItem from="1619935594398" duration="368000" />
+      <workItem from="1619936505322" duration="42000" />
     </task>
     <servers />
   </component>
