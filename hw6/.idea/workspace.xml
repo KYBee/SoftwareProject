@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd44101f-323c-4a30-bf0f-0e3c924207ff" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/hw.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../buffer_thread/buffer_thread.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hw.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hw4/hw4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../hw4/hw4.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Crawler/Crawler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Crawler/UrlDepthPair.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Crawler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Crawler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,17 +39,31 @@
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration name="Crawler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Crawler" />
+      <module name="Crawler" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Crawler" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -65,6 +74,7 @@
       <option name="presentableId" value="Default" />
       <updated>1621597711587</updated>
       <workItem from="1621597713715" duration="3681000" />
+      <workItem from="1621610071570" duration="7677000" />
     </task>
     <servers />
   </component>
@@ -81,5 +91,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
