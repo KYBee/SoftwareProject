@@ -1,5 +1,3 @@
-package Crawler;
-
 import java.net.*;
 
 public class UrlDepthPair {
