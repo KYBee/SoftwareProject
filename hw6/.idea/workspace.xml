@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd44101f-323c-4a30-bf0f-0e3c924207ff" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../hw_6_2/.idea/hw_6_2.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Crawler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Crawler.java" afterDir="false" />
     </list>
@@ -51,17 +50,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Crawler" />
@@ -79,6 +67,7 @@
       <workItem from="1621597713715" duration="3681000" />
       <workItem from="1621610071570" duration="7677000" />
       <workItem from="1621659541041" duration="20854000" />
+      <workItem from="1621682972459" duration="34000" />
     </task>
     <servers />
   </component>

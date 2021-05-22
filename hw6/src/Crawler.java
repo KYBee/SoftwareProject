@@ -88,7 +88,7 @@ public class Crawler {
 
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
                 // handling web connection timeout for long waiting
-                conn.setConnectTimeout(10000);
+                conn.setConnectTimeout(1000);
                 conn.setReadTimeout(3000);
 
                 // handling the url which send valid response code
