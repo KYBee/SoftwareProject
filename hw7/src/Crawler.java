@@ -63,20 +63,26 @@ public class Crawler {
         } catch (Exception e) { System.exit(1); }
 
 
-        long beforeTime = System.currentTimeMillis();
         // Print out all found urls
+
+        long beforeTime = System.currentTimeMillis();
         Crawler crawler = new Crawler(startURL, maxDepth, numThreads, true);
+        long afterTime = System.currentTimeMillis();
+
         List<UrlDepthPair> found = crawler.crawl();
 
-        long afterTime = System.currentTimeMillis();
-        long secDiffTime = (afterTime - beforeTime);
+
 
         //for (UrlDepthPair pair : found)
         //    System.out.println(pair);
 
          System.out.println("Found " + found.size() + " pages starting from " + args[0]);
 
-         System.out.println("Time for Execution: " + secDiffTime);
+
+        long secDiffTime = (afterTime - beforeTime);
+
+        System.out.println("Time for Execution: " + secDiffTime);
+
 
         // All done
         System.exit(0);
